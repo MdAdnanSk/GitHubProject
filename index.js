@@ -9,7 +9,7 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
 
 const octokit = new Octokit({
-    
+    auth:process.env.TOKEN
 });
 
 let username="";
